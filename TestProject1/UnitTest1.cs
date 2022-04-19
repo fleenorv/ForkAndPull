@@ -10,8 +10,8 @@ namespace TestProject1
         public void Try_To_Set_HighGPA()
         {
             Student newStu = new Student();
-            newStu.Gpa = 4.21;
-            Assert.AreEqual(newStu.Gpa, 4.00);
+            newStu.Gpa = 4.20;
+            Assert.AreEqual(newStu.Gpa, 0);
         }
     }
 }
