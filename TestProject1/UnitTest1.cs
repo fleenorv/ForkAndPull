@@ -13,5 +13,11 @@ namespace TestProject1
             newStu.Gpa = 4.21;
             Assert.AreEqual(newStu.Gpa, 4.00);
         }
+        public void Try_To_Set_LowGPA()
+        {
+            Student newStu = new Student();
+            newStu.Gpa = -1.0;
+            Assert.AreEqual(newStu.Gpa, 4.00);
+        }
     }
 }
