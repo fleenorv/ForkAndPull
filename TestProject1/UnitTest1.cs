@@ -11,7 +11,7 @@ namespace TestProject1
         {
             Student newStu = new Student();
             newStu.Gpa = 4.21;
-            Assert.AreEqual(newStu.Gpa, 4.00);
+            Assert.AreEqual(newStu.Gpa, 0);
         }
     }
 }
